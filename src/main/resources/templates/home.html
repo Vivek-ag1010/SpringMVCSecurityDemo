@@ -17,6 +17,18 @@
     <br><br>
     Role(s): <span sec:authentication="principal.authorities"></span>
 </p>
+<hr>
+<!--Add a link to pint to /leaders ... this is for the managers-->
+<p>
+    <a th:href="@{/leaders}">Leadership Meeting </a>
+    <i>(Only for manager peeps)</i>
+</p>
+
+<!--Add a link to point to /systems ... this is for the admins-->
+<p>
+    <a th:href="@{/systems}">IT Systems Meeting </a>
+    <i>(Only for Admin)</i>
+</p>
 <!--Add a logout button-->
 <form action="#" th:action="@{/logout}" method="POST">
     <input type="submit" value="Logout"/>
